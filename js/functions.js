@@ -1,5 +1,5 @@
 function checkLength (string, maxLength) {
-  let result = (string.length <= maxLength) ? true : false;
+  const result = (string.length <= maxLength) ? true : false;
   return result;
 }
 
@@ -10,9 +10,7 @@ function checkIfPalindrom (string) {
   for (let i = normalisedString.length - 1; i >= 0; i--) {
     reversedString += normalisedString[i];
   }
-
   const isPalindrom = (reversedString === normalisedString);
-
   return isPalindrom;
 }
 
