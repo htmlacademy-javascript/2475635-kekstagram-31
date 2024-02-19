@@ -8,11 +8,11 @@ function checkIfPalindrom (string) {
   const normalisedString = noSpaceString.toUpperCase();
   let reversedString = '';
   for (let i = normalisedString.length - 1; i >= 0; i--) {
-        reversedString += normalisedString[i];
-    }
+    reversedString += normalisedString[i];
+  }
 
-  let isPalindrom = (reversedString === normalisedString);
+  const isPalindrom = (reversedString === normalisedString);
 
-    return isPalindrom;
+  return isPalindrom;
 }
 
