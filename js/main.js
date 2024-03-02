@@ -82,6 +82,6 @@ const generatePhoto = () => {
     comments
   };
 };
-
+//делаем массив из постов
 const photos = Array.from({ length: POST_COUNTER }, generatePhoto);
 
