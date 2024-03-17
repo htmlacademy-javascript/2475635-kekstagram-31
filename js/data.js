@@ -38,5 +38,4 @@ const getDataArrayMiniatures = () =>{
   return { DESCRIPTIONS, COMMENTS, NAMES};
 }
 
-
 export { getDataArrayMiniatures };
