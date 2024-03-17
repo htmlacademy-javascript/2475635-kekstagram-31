@@ -21,7 +21,7 @@ const transformTimeToNumber = (timeString) => {
   return hours * 60 + minutes;
 };
 
-const isEnoughTime = (startDay, endDay, startMeeting, meetingDuration) => {
+const CheckIfIsEnoughTime = (startDay, endDay, startMeeting, meetingDuration) => {
   const startDayInMinutes = transformTimeToNumber(startDay);
   const endDayInMinutes = transformTimeToNumber(endDay);
   const startMeetingInMinutes = transformTimeToNumber(startMeeting);
