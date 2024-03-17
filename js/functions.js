@@ -14,3 +14,16 @@ function checkIfPalindrom (string) {
   return isPalindrom;
 }
 
+const transformTimeToNumber = (timeString) => {
+  const timeParts = timeString.split(':');
+  const hours = parseInt(timeParts[0], 10);
+  const minutes = parseInt(timeParts[1], 10);
+  return hours * 60 + minutes;
+};
+
+const isEnoughTime = (startDay, endDay, startMeeting, meetingDuration) => {
+  const startDayInMinutes = transformTimeToNumber(startDay);
+  const endDayInMinutes = transformTimeToNumber(endDay);
+  const startMeetingInMinutes = transformTimeToNumber(startMeeting);
+  return startMeetingInMinutes >= startDayInMinutes && (endDayInMinutes - startMeetingInMinutes) >= meetingDuration;
+};
