@@ -32,4 +32,4 @@ const CheckIfIsEnoughTime = (startDay, endDay, startMeeting, meetingDuration) =>
   const endDayInMinutes = transformTimeToNumber(endDay);
   const startMeetingInMinutes = transformTimeToNumber(startMeeting);
   return startMeetingInMinutes >= startDayInMinutes && (endDayInMinutes - startMeetingInMinutes) >= meetingDuration;
-};
+}}};
