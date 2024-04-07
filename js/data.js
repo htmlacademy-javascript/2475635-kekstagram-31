@@ -14,7 +14,7 @@ const getDataArrayMiniatures = () =>{
     'пляж'
   ];
 
-  const COMMENTS= [
+  const COMMENTS = [
     'Всё отлично!',
     'В целом всё неплохо. Но не всё.',
     'Когда вы делаете фотографию, хорошо бы убирать палец из кадра. В конце концов это просто непрофессионально.',
@@ -38,7 +38,7 @@ const getDataArrayMiniatures = () =>{
   ];
 
   return { DESCRIPTIONS, COMMENTS, NAMES};
-}
+};
 
 
 export { getDataArrayMiniatures };

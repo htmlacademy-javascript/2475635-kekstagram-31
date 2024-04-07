@@ -1,2 +1,2 @@
-import {getArrayMiniatures} from './createArrayMiniatures.js';
-console.log(getArrayMiniatures());
+
+import './thumbnails.js';
