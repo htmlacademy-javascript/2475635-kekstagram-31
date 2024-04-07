@@ -1,4 +1,4 @@
-import {getArrayMiniatures} from './createArrayMiniatures.js'
+import {getArrayMiniatures} from './createArrayMiniatures.js';
 
 const images = document.querySelector('.pictures');
 
