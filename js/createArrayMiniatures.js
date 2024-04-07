@@ -1,5 +1,5 @@
-import { getRandomInteger, createRandomIdFromRangeGenerator, getRandomArrayElement} from './util.js';
-import { getDataArrayMiniatures } from "./data.js";
+import { getRandomInteger, getRandomArrayElement} from './util.js';
+import { getDataArrayMiniatures } from './data.js';
 
 
 const OBJECT_COUNT = 25;
@@ -54,4 +54,4 @@ const createPhotoDescription = () => {
 const getArrayMiniatures = () =>
   Array.from({ length: OBJECT_COUNT}, createPhotoDescription);
 
-  export { getArrayMiniatures};
+export { getArrayMiniatures};
