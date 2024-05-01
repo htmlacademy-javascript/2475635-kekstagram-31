@@ -54,4 +54,4 @@ const createPhotoDescription = () => {
 const getArrayMiniatures = () =>
   Array.from({ length: OBJECT_COUNT}, createPhotoDescription);
 
-export { getArrayMiniatures};
+export { getArrayMiniatures, createPhotoDescription};

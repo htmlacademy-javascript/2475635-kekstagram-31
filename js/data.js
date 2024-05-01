@@ -1,5 +1,3 @@
-
-
 const getDataArrayMiniatures = () =>{
   const DESCRIPTIONS = [
     'небо',
@@ -40,5 +38,4 @@ const getDataArrayMiniatures = () =>{
   return { DESCRIPTIONS, COMMENTS, NAMES};
 };
 
-
-export { getDataArrayMiniatures };
+export {getDataArrayMiniatures};
