@@ -73,10 +73,10 @@ function closeBigPicture() {
 
 images.addEventListener('click', (evt) => {
   evt.preventDefault();
-const currentImg = evt.target.closest('.picture__img')
+  const currentImg = evt.target.closest('.picture__img');
   if (currentImg) {
     photos.forEach((photo) => {
-        showBigPicture(photo);
+      showBigPicture(photo);
     });
   }
 });

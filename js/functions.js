@@ -1,5 +1,5 @@
 function checkLength (string, maxLength) {
-  const result = (string.length <= maxLength) ? true : false;
+  const result = (string.length <= maxLength);
   return result;
 }
 
@@ -32,4 +32,4 @@ const makeTimeToNumber = (timeString) => {
       const endDayInMinutes = transformTimeToNumber(endDay);
       const startMeetingInMinutes = transformTimeToNumber(startMeeting);
       return startMeetingInMinutes >= startDayInMinutes && (endDayInMinutes - startMeetingInMinutes) >= meetingDuration;
-  };};};
+    };};};
