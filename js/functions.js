@@ -20,14 +20,9 @@ const transformTimeToNumber = (timeString) => {
   const minutes = parseInt(timeParts[1], 10);
   return hours * 60 + minutes;
 };
-
-const checkEnoughTime = (startDay, endDay, startMeeting, meetingDuration) => {
-  const startDayInMinutes = transformTimeToNumber(startDay);
-  const endDayInMinutes = transformTimeToNumber(endDay);
-  const startMeetingInMinutes = transformTimeToNumber(startMeeting);
-  const CheckIfIsEnoughTime = (startDay, endDay, startMeeting, meetingDuration) => {
+const CheckIfIsEnoughTime = (startDay, endDay, startMeeting, meetingDuration) => {
     const startDayInMinutes = transformTimeToNumber(startDay);
     const endDayInMinutes = transformTimeToNumber(endDay);
     const startMeetingInMinutes = transformTimeToNumber(startMeeting);
     return startMeetingInMinutes >= startDayInMinutes && (endDayInMinutes - startMeetingInMinutes) >= meetingDuration;
-  };};
+  };
