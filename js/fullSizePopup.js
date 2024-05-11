@@ -96,8 +96,8 @@ const closeBigPicture = () => {
 // открывает окно с большой картинкой по нажатию на превью
 images.addEventListener('click', (evt) => {
   evt.preventDefault();
-
-  if (evt.target.className === 'picture__img') {
+  const targetPicture = evt.target.closest('.picture__img') ;
+  if (targetPicture )  {
     photos.forEach((photo) => {
       if (evt.target.src.endsWith(photo.url)) {
         showBigPicture(photo);
