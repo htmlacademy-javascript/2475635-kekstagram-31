@@ -18,13 +18,15 @@ const createRandomIdFromRangeGenerator = (min, max) => {
     }
   };
 };
+const checkForEsc = (evt) => evt.key === 'Escape';
+
 
 const getRandomArrayElement = (elements) =>
   elements[getRandomInteger(0,elements.length - 1)];
-
 
 export {
   getRandomInteger,
   createRandomIdFromRangeGenerator,
   getRandomArrayElement,
+  checkForEsc
 };
